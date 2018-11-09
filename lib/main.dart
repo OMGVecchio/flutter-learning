@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
+import 'route-test.dart';
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,6 +18,9 @@ class MyApp extends StatelessWidget {
           child: new RandomWords(),
         ),
       ),
+      routes: <String, WidgetBuilder> {
+        '/test': (BuildContext ctx) => new RouteTest(),
+      },
     );
   }
 }
@@ -92,6 +97,7 @@ class RandomWordsState extends State<RandomWords> {
                   pair.asCamelCase,
                   style: _biggerFont,
                 ),
+                onTap: _pushTest,
               );
             }
           );
@@ -108,5 +114,8 @@ class RandomWordsState extends State<RandomWords> {
         }
       )
     );
+  }
+  void _pushTest() {
+    Navigator.pushNamed(context, '/test');
   }
 }
