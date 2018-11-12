@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'pages/english-word.dart';
-import 'pages/route-test.dart';
+import 'pages/images.dart';
+import 'pages/article.dart';
 
 void main() => runApp(new MyApp());
 
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       ),
       home: new EWLPage(),
       routes: <String, WidgetBuilder> {
-        '/test': (BuildContext ctx) => new RouteTest(),
+        '/images': (BuildContext ctx) => new ImagesPage(),
+        '/article': (BuildContext ctx) => new ArticlePage(),
       },
     );
   }

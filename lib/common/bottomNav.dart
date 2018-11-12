@@ -10,7 +10,10 @@ class SelfBottomNav extends StatelessWidget {
       onTap: (int index) {
         switch (index) {
           case 1:
-            Navigator.pushReplacementNamed(ctx, '/test');
+            Navigator.pushReplacementNamed(ctx, '/images');
+            break;
+          case 2:
+            Navigator.pushReplacementNamed(ctx, '/article');
             break;
           default:
             Navigator.pushReplacementNamed(ctx, '/');
@@ -20,6 +23,10 @@ class SelfBottomNav extends StatelessWidget {
         BottomNavigationBarItem(
           icon: new Icon(Icons.home),
           title: new Text('Home'),
+        ),
+        BottomNavigationBarItem(
+          icon: new Icon(Icons.image),
+          title: new Text('Images'),
         ),
         BottomNavigationBarItem(
           icon: new Icon(Icons.mail),

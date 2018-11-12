@@ -2,13 +2,15 @@
 
 ## Dart
 
++ 实战时，除去 Widget 的简单使用，发现其实 Dart 语法还是特别重要的，建议上手 Flutter 之前大概连接 Dart 的基础语法和编码规范思路
+
 + 实例化时 new 可以省略
 
-## 实战 Demo
+## 实战 Demo > Article
 
 + 简单展示下自己 Blog 的数据，当个小练习
 
-## TODO
++ 获取 文章列表：请求及数据处理，然后反馈到页面上的流程，需要重新梳理清楚 TODO
 
 ## Directory
 

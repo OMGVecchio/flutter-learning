@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../common/bottomNav.dart';
 
-class RouteTest extends StatelessWidget {
+class ImagesPage extends StatelessWidget {
   @override
   Widget build(BuildContext ctx) {
     return Scaffold(
